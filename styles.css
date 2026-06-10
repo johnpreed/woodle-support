@@ -1,0 +1,158 @@
+/* Woodle support site — plain CSS, no external dependencies, no trackers. */
+
+:root {
+  --felt-top: #1a6e41;
+  --felt-bottom: #093a1f;
+  --wood: #8b5a2b;
+  --wood-dark: #5e3a1a;
+  --gold: #d9a94e;
+  --paper: #fbf7ef;
+  --ink: #1e2a22;
+  --muted: #5b6660;
+  --line: #e7ded0;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--ink);
+  background: linear-gradient(160deg, var(--felt-top) 0%, var(--felt-bottom) 100%);
+  background-attachment: fixed;
+  padding: 24px 16px 48px;
+}
+
+.wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* Brand header */
+.brand {
+  text-align: center;
+  padding: 16px 0 24px;
+}
+
+.brand .tiles {
+  display: inline-flex;
+  gap: 6px;
+}
+
+.brand .tile {
+  width: 44px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+  background: linear-gradient(180deg, var(--wood) 0%, var(--wood-dark) 100%);
+  color: #fff;
+  font-weight: 800;
+  font-size: 24px;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.brand .tagline {
+  margin: 14px 0 0;
+  color: #eaf3ec;
+  font-size: 15px;
+}
+
+/* Card */
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 28px 26px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+}
+
+.card + .card { margin-top: 20px; }
+
+h1 {
+  margin: 0 0 4px;
+  font-size: 28px;
+  color: var(--wood-dark);
+}
+
+h2 {
+  margin: 28px 0 8px;
+  font-size: 20px;
+  color: var(--wood-dark);
+  border-bottom: 2px solid var(--line);
+  padding-bottom: 6px;
+}
+
+h3 { margin: 18px 0 4px; font-size: 17px; color: var(--ink); }
+
+p, li { font-size: 16px; }
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 0 0 12px;
+}
+
+.updated { color: var(--muted); font-size: 14px; margin-top: 0; }
+
+a { color: #14653a; font-weight: 600; }
+a:hover { color: var(--wood-dark); }
+
+/* Button-style links */
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 12px 20px;
+  border-radius: 12px;
+  background: linear-gradient(180deg, var(--wood) 0%, var(--wood-dark) 100%);
+  color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.btn.secondary {
+  background: #fff;
+  color: var(--wood-dark);
+  border: 1px solid var(--line);
+}
+
+.btn:hover { color: #fff; opacity: 0.95; }
+.btn.secondary:hover { color: var(--wood-dark); }
+
+/* FAQ */
+.faq h3 { color: var(--wood-dark); }
+.faq p { margin-top: 4px; }
+
+.note {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  color: #cfe2d5;
+  font-size: 13px;
+  margin-top: 28px;
+}
+
+footer a { color: #eaf3ec; }
