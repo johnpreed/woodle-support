@@ -28,10 +28,15 @@ In App Store Connect for the Woodle app version:
 - **Privacy Policy URL** → `https://johnpreed.github.io/woodle-support/privacy.html`
 - **Support URL** → `https://johnpreed.github.io/woodle-support/support.html`
 
+## Contact
+
+- Email: **woodle.support@gmail.com**
+- Issues: file them in this repo at
+  <https://github.com/johnpreed/woodle-support/issues>
+
 ## Before submitting to Apple — TODO
 
-- [ ] Replace **`support@example.com`** with a real support email in
-      `privacy.html` and `support.html`.
+- [x] Set a real support email (`woodle.support@gmail.com`) in `privacy.html` and `support.html`.
 - [ ] Confirm the **effective date** in `privacy.html` is correct.
 - [ ] Verify both Pages URLs load before entering them in App Store Connect.
 
